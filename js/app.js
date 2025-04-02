@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Declaración de variables API y templates
   const API_BASE_URL = "https://api.themoviedb.org/3"
-  const API_KEY = "YOUR_API_KEY" // Reemplaza con tu API key
+  const API_KEY = "32e5e53999e380a0291d66fb304153fe" // Reemplaza con tu API key
   const MOVIE_TEMPLATE = "movie.html"
   const TV_TEMPLATE = "tv.html"
   const MAX_RECENT_SEARCHES = 5
