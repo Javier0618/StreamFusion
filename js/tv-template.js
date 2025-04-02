@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Declarar las variables API_BASE_URL, API_KEY e IMG_BASE_URL
   const API_BASE_URL = "https://api.themoviedb.org/3"
-  const API_KEY = "YOUR_API_KEY" // Reemplaza con tu API key real
+  const API_KEY = "32e5e53999e380a0291d66fb304153fe" // Reemplaza con tu API key real
   const IMG_BASE_URL = "https://image.tmdb.org/t/p"
 
   // Obtener el ID de la serie de la URL
