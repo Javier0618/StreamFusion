@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamFusion - Información de Serie</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://api.themoviedb.org">
+    <link rel="preconnect" href="https://image.tmdb.org">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/template-styles.css">
+</head>
+<body>
+    <!-- Indicador de carga de página -->
+    <div id="pageLoader" class="page-loader">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <div class="container">
+        <div class="player">
+            <div class="videoPlayer">
+                <iframe id="videoPlayer" src="about:blank" frameborder="0" allowfullscreen></iframe>
+                <button id="reloadButton" class="reload-button" title="Recargar video">
+                    <i class="fas fa-sync-alt"></i>
+                </button>
+            </div>
+            <div class="text-h3-0">
+                <h3>También te podría gustar!</h3>
+            </div>
+            <div class="recommended-series-2">
+                <div class="content-2" id="relatedContent2">
+                    <div class="loading-spinner" id="relatedLoader2" style="margin: 20px auto;"></div>
+                </div>
+            </div>
+        </div> 
+        <div class="sidebar">
+            <div class="series-info">
+                <div class="series-poster">
+                    <img id="seriesPoster" alt="Poster de la serie" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iIzJDMkMyQyIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjAiIGZpbGw9IiNkZWRlZGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiPkNhcmdhbmRvLi4uPC90ZXh0Pjwvc3ZnPg==">
+                </div>
+                <div class="series-details">
+                    <h2 id="seriesTitle">Cargando...</h2>
+                    <p id="seriesFirstAirDate">Año de estreno: ...</p>
+                    <p id="seriesGenres">Géneros: ...</p>
+                    <p id="seriesCreators">Creadores: ...</p>
+                    <p id="seriesActors">Actores principales: ...</p>
+                </div>
+            </div>
+            <div class="series-seasons-1">
+                <h3>Temporadas</h3>
+                <div class="season-dropdown">
+                    <select id="seasonDropdown"></select>
+                </div>
+                <div class="episodes-slider" id="episodesSlider"></div>
+            </div>
+            <div class="series-seasons">
+                <p id="seriesOverview">Cargando descripción...</p>
+            </div>
+            <div class="text-h3-1">
+                <h3>También te podría gustar!</h3>
+            </div>
+            <div class="recommended-series">
+                <div class="content" id="relatedContent">
+                    <div class="loading-spinner" id="relatedLoader" style="margin: 20px auto;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Series Details Modal Container -->
+    <div id="series-details-modal-container"></div>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/tv-template.js"></script>
+</body>
+</html>
+

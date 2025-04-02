@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamFusion - Entretenimiento Streaming</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://api.themoviedb.org">
+    <link rel="preconnect" href="https://image.tmdb.org">
+</head>
+<body>
+    <!-- Indicador de carga -->
+    <div id="pageLoader" class="page-loader">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="index.html" class="back-link"><i class="fas fa-home"></i></a>
+        </div>
+        <div class="header-content">      	
+            <h1><span class="highlight">Stream</span><span class="secondary-highlight">Fusion</span></h1>
+        </div>
+        <div class="logo">
+            <a href="#" id="reportBtn" class="report"><i class="fas fa-exclamation"></i></a>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="search-container">
+            <h2>Buscar contenido</h2>
+            <div class="search-form">
+                <input type="text" id="contentId" placeholder="Ingresa el ID de TMDB" class="search-input">
+                <button id="searchBtn" class="search-button">Buscar</button>
+            </div>
+            <div class="search-help">
+                <p>Ingresa el ID numérico de una película o serie de TMDB para ver su información.</p>
+            </div>
+        </div>
+
+        <div class="recent-searches">
+            <h2>Búsquedas recientes</h2>
+            <div id="recentSearches" class="recent-list"></div>
+        </div>
+
+        <div id="contentContainer" class="content-container"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 StreamFusion. Todos los derechos reservados.</p>
+        <p>Desarrollado con <i class="fas fa-heart"></i> por StreamFusion</p>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
